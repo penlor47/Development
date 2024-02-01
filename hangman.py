@@ -5,7 +5,6 @@ def hangman(word):
     stages = ["", "______", "|______", "|", "| / \\", "| /|\\", "|  O", "|  |", " ___"]
     wletters = list(word)
     board = ["__ "] * len(word)
-    win = False
     gindx = []
     guessed = []
     level = ["","","","","","",""]
@@ -59,7 +58,6 @@ def hangman(word):
         if wrong == 12:
             print("You lost the word was: " + word)
         if board == wletters:
-            win = True
             print("You got the word, brilliant.")
             break
         
