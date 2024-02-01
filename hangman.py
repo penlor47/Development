@@ -1,4 +1,6 @@
 # Hangman Game
+## Just something a little fun I wrote to remind myself od basic python commands
+
 
 def hangman(word):
     wrong = 0
