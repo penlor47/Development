@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>The Wedding of Mat and Penny</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://fonts.cdnfonts.com/css/tolkien">
+	<link rel="icon" type="image/x-icon" href="Pics/LOTR/ring.png">
+</head>
+<body>
+	<nav class="light-green sticky">
+    <ul class="main-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="us.html">Us</a></li>
+    </ul>
+  </nav>
+  <div class="main">
+	  <div class="professional-pics">
+	  	<img src="Pics/23sep1.jpg">
+			<img src="Pics/23sep3.jpg">
+			<img src="Pics/23sep4.jpg">
+			<img src="Pics/23sep5.jpg">
+			<img src="Pics/23sep2.jpg">
+			<img src="Pics/23sep6.jpg">
+		  </div>
+	  <h2>We need you to answer these Questions</h2>
+	  <form name="weddingResponse" action="answers.php" method="POST">
+	  	<label for="fname"><small>*</small> First name:</label><br>
+	  	<input type="text" id="fname" name="fname" required><br>
+	  	<label for="lname"><small>*</small> Last name:</label><br>
+	  	<input type="text" id="lname" name="lname" required><br>
+	  	<label for="email"><small>*</small> What is your email?</label><br>
+	  	<input type="email" id="email" name="email" style="width:75%" required><br>
+	  	<label><small>*</small> Can you attend our wedding?</label><br>
+	  	<input type="radio" id="yes" name="attendance" value="yes" required>
+	  	<label for="yes">Yes</label><br>
+	  	<input type="radio" id="no" name="attendance" value="no" required>
+	  	<label for="no">No</label><br><br>
+	  	<label>Do you have any dietary requirements?</label><br>
+	  	<input type="checkbox" id="veg" name="diet" value="Vegetarian">
+	  	<label>Vegetarian</label><br>
+	  	<input type="checkbox" id="ve" name="diet" value="Vegan">
+	  	<label>Vegan</label><br>
+	  	<input type="checkbox" id="dairy" name="diet" value="Dairy">
+	  	<label>Dairy Free</label><br>
+	  	<input type="checkbox" id="glu" name="diet" value="Gluten">
+	  	<label>Gluten Free</label><br>
+	  	<input type="checkbox" id="lac" name="diet" value="Lactose">
+	  	<label>Lactose Intolerance</label><br>
+	  	<label>Allergies: </label> <input type="text" name="diet" style="width:95%"><br>
+	  	<label for="access">Do you have any accessability requirements that we should be aware of? <small>(e.g. sensory, physical, mobility, or other)</small></label><br>
+	  	<input type="text" id="access" name="access" style="width:95%"><br>
+	  	<label for="song">Do you have a song request?</label><br>
+	  	<input type="text" id="song" name="song" style="width:95%"><br>
+	  	<label for="advice">Do you have any advice for us?</label><br>
+	  	<input type="text" id="advice" name="advice" style="width:95%"><br>
+	  	<label for="other">Finally, anything else you want to tell or ask us us?</label><br>
+	  	<input type="text" id="other" name="other" style="width:95%"><br>
+	  	<input type="submit" name="Finished"><br>
+	  	<label><small>* Required</small></label>
+	  </form>
+	  <img src="Pics/LOTR/walking.png" class="bottom">
+	</div>
+</body>
+</html>
+			

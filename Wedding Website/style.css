@@ -1,0 +1,352 @@
+body {
+  font-family: "Tolkien", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: auto 0;
+  background: #c7af6b;
+  width: 100%;
+}
+
+h1 {
+  font-size: 10vh;
+  margin: auto 0;
+  color: #683019;
+  text-align: center;
+}
+
+h2 {
+  font-size: 7vh;
+  margin: auto 0;
+  color: #683019;
+  text-align: center;
+  margin-bottom: 1vh;
+}
+
+/* NAVIGATION */
+
+.main-nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+li {
+    padding: 2vw;
+    font-size: 4vh;
+    margin-right: 2vh;
+}
+
+a {
+    color: #f0dfba;
+    text-decoration: none;
+}
+
+.light-green {
+    padding: 2vh;
+    background: #513f1f; /* Old browsers */
+    background: -moz-linear-gradient(top, #513f1f 0%, #c7af6b 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#513f1f), color-stop(100%,#c7af6b)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #513f1f 0%, #c7af6b 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #513f1f 0%, #c7af6b 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #513f1f 0%, #c7af6b 100%); /* IE10+ */
+    background: linear-gradient(top, #513f1f 0%, #c7af6b 100%); /* W3C */
+}
+
+.main {
+  margin-top: 13vh;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* PIC SLIDESHOW */
+
+@keyframes bannermove-couple {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-730vw);
+  }
+
+}
+
+.couple-pics {
+  position: relative;
+  height: 15em;
+  margin-bottom: 1.875em;
+  display: flex;
+  width: 100%;
+  animation-name: bannermove-couple;
+  animation-duration: 180s;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.couple-pics img {
+  margin: 0em .625em;
+  box-shadow: .125em .125em .5em #8a8a8a;
+}
+
+@keyframes bannermove-prof {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-45em);
+  }
+
+}
+
+.professional-pics {
+  position: relative;
+  height: 15em;
+  margin-bottom: 1.875em;
+  display: flex;
+  width: 100%;
+  animation-name: bannermove-prof;
+  animation-duration: 10s;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.professional-pics img {
+  margin: 0em .625em;
+  box-shadow: .125em .125em .5em #8a8a8a;
+}
+
+/* Paragraph*/
+
+p {
+  font-size: 1.5em;
+  color: #49432d;
+  margin-left: .7em;
+  margin-right: .7em;
+  text-align: justify;
+  padding-bottom: 0;
+  padding-top: 0;
+  margin-bottom: .3em;
+  margin-top: .7em;
+}
+
+h3 {
+  font-size: 2em;
+  color: #784333;
+  margin-left: .5em;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  margin-top: .5em;
+}
+
+h4 {
+  font-size: 1.7em;
+  color: #784333;
+  margin-left: .5em;
+  padding-bottom: 0;
+  padding-top: 0;
+  margin-bottom: 0;
+  margin-top: .4em;
+}
+
+.map {
+  display: flex;
+  font-size: 1.5em;
+  color: #49432d;
+  align-items: flex-start;
+  margin-left: .7em;
+  margin-top: .5em;
+}
+
+.map:hover {
+  color: #a87164;
+}
+
+/* Form */
+
+form {
+  font-size: 3vh;
+  color: #49432d;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  text-align: justify;
+  padding-bottom: 0;
+  padding-top: 0;
+  margin-bottom: .5vh;
+  margin-top: 1vh;
+}
+
+input[type="text"] {
+  margin-top: .5vh;
+  margin-bottom: 3vh;
+  font-family: "Tolkien", sans-serif;
+  font-size: 3vh;
+  padding: 1vh;
+  color: #713d34;
+  background-color: #e4ddc1;
+  border: none;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #4c5441;
+  box-shadow: 0 0 0 .1em #4c5441;
+  background-color: #e4ddc1;
+}
+
+input[type="email"] {
+  margin-top: .5vh;
+  margin-bottom: 3vh;
+  font-family: "Tolkien", sans-serif;
+  font-size: 3vh;
+  padding: 1vh;
+  color: #713d34;
+  background-color: #e4ddc1;
+  border: none;
+}
+
+input[type="email"]:focus {
+  outline: none;
+  border-color: #4c5441;
+  box-shadow: 0 0 0 .1em #4c5441;
+  background-color: #e4ddc1;
+}
+
+input[type="radio"] {
+  margin-bottom: 1vh;
+  accent-color: #4c5441;
+}
+
+input[type="checkbox"] {
+  margin-bottom: 1vh;
+  accent-color: #4c5441;
+}
+
+input[type="submit"] {
+  background-color: #7b4938;
+  border: none;
+  color: #f0dfba;
+  font-size: 4vh;
+  width: 20vw;
+  padding-top: 2vh;
+  padding-bottom: 1vh;
+  font-family: "Tolkien", sans-serif;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: calc(50% - 10vw);
+}
+
+/* Us */
+
+.party {
+  display: flex;
+  max-width: 100%;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.pics {
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 20em;
+}
+
+.bridegroom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1vw;
+  margin-left: 1vw;
+}
+
+.parents {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1vw;
+  margin-left: 1vw;
+}
+
+.cheifbest {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1vw;
+  margin-left: 1vw;
+}
+
+.others {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1vw;
+  margin-left: 1vw;
+}
+
+.bride {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.groom {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.double {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1vw;
+  margin-left: 1vw;
+}
+
+
+.sub {
+  max-width: 100%;
+  text-align: center;
+  font-size: 3vh;
+}
+
+.caption {
+  max-width: 75%;
+  text-align: center;
+  font-size: 2vh;
+  margin-bottom: 1vh;
+  padding-bottom: 3vh;
+}
+
+/* Extra Images */
+
+.miniHand {
+  max-height: 2em;
+  padding-left: 1em;
+}
+
+/* Footer */
+
+.bottom {
+  max-height: 10em;
+  position: absolute;
+  bottom: -11em;
+  filter: invert(22%) sepia(59%) saturate(487%) hue-rotate(360deg) brightness(88%) contrast(87%);
+}
+
+.footer img{
+  max-height: 10em;
+  position: absolute;
+  bottom: -11em;
+  filter: invert(22%) sepia(59%) saturate(487%) hue-rotate(360deg) brightness(88%) contrast(87%);
+}
