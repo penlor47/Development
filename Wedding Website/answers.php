@@ -5,8 +5,10 @@ $first_name = $_POST['first_name'];
 $last_name = $_POST['last_name'];
 $subject = "Answers to Wedding Questions";
 $subject2 = "Copy of your answers to Penny and Mats Wedding Questions";
-$message = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . "Attendance: " . $_POST['attendance'] . "\n\n" . "Dietary Requirements: " . $_POST['diet'] . "\n\n" . "Accessibility Requirements: " . $_POST['access'] . "\n\n" . "Song request: " . $_POST['song'] . "\n\n" . "Your Advice: " . $_POST['advice'] . "\n\n" . "Your other comments: " . $_POST['other'];
-$message2 = "Here is a copy of your answers: " . $first_name . "\n\n" . "Attendance: " . $_POST['attendance'] . "\n\n" . "Dietary Requirements: " . $_POST['diet'] . "\n\n" . "Accessibility Requirements: " . $_POST['access'] . "\n\n" . "Song request: " . $_POST['song'] . "\n\n" . "Your Advice: " . $_POST['advice'] . "\n\n" . "Your other comments: " . $_POST['other'];
+
+$message = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . "Attendance: " . $_POST['attendance'] . "\n\n" . "Dietary Requirements: " . $_POST['diet'] . "\n\n" . "Accessibility Requirements: " . $_POST['access'] . "\n\n" . "Song request: " . $_POST['song'] . "\n\n" . "Your Advice: " . $_POST['advice'] . "\n\n" . "Your other comments: " . $_POST['other'] . "\n\n" . "Breakfast attendance: " . $_POST['breakfast'];
+
+$message2 = $first_name . ", here is a copy of your answers for  Mat and Penny's wedding." .  "\n\n" . "Attendance: " . $_POST['attendance'] . "\n\n" . "Dietary Requirements: " . $_POST['diet'] . "\n\n" . "Accessibility Requirements: " . $_POST['access'] . "\n\n" . "Song request: " . $_POST['song'] . "\n\n" . "Your Advice: " . $_POST['advice'] . "\n\n" . "Your other comments: " . $_POST['other'] . "\n\n" . "Breakfast attendance: " . $_POST['breakfast'];
 
 $headers = "From:" . $from;
 $headers2 = "From:" . $to;
