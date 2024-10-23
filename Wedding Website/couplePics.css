@@ -1,0 +1,77 @@
+.pics-container {
+  overflow: hidden;
+}
+.couple-pics {
+  --left-spacing: 5vw;
+  --slideshow-items:7.9;
+  --ignore-width-of-first-item: 1;
+
+  position: relative;
+  height: 30vh;
+  margin-bottom: 1.875vh;
+  display: flex;  
+
+  padding-left: var(--left-spacing);
+  box-sizing: border-box;
+  min-width: 100%;
+  
+  background-position: var(--left-spacing) center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  -webkit-animation: bannermove 180s alternate linear infinite;
+   -moz-animation: bannermove 180s alternate linear infinite;
+    -ms-animation: bannermove 180s alternate linear infinite;
+     -o-animation: bannermove 180s alternate linear infinite;
+        animation: bannermove 180s alternate linear infinite;
+}
+
+.couple-pics > .img {
+  margin: 0vw .625vw;
+  box-shadow: .125vw .125vw .5vh #8a8a8a;
+}
+
+@keyframes bannermove {
+    0% {
+      left: 0px;
+    }
+    100% {
+      left: calc(-1 * 100vw * (var(--slideshow-items) - var(--ignore-width-of-first-item)));
+    }
+  }
+  
+@-moz-keyframes bannermove {
+0% {
+    left: 0px;
+}
+100% {
+    left: calc(-1 * 100vw * (var(--slideshow-items) - var(--ignore-width-of-first-item)));
+}
+}
+
+@-webkit-keyframes bannermove {
+0% {
+    left: 0px;
+}
+100% {
+    left: calc(-1 * 100vw * (var(--slideshow-items) - var(--ignore-width-of-first-item)));
+}
+}
+
+@-ms-keyframes bannermove {
+0% {
+    left: 0px;
+}
+100% {
+    left: calc(-1 * 100vw * (var(--slideshow-items) - var(--ignore-width-of-first-item)));
+}
+}
+
+@-o-keyframes bannermove {
+0% {
+    left: 0px;
+}
+100% {
+    left: calc(-1 * 100vw * (var(--slideshow-items) - var(--ignore-width-of-first-item)));
+}
+}

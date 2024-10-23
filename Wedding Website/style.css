@@ -68,62 +68,80 @@ a {
 
 /* PIC SLIDESHOW */
 
-@keyframes bannermove-couple {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(-730vw);
-  }
-
+.pics-container {
+  overflow: hidden;
 }
 
-.couple-pics {
+.professional-pics {
+  --slideshow-items:6;
+  --ignore-width-of-first-item: 1;
+
   position: relative;
   height: 15em;
   margin-bottom: 1.875em;
   display: flex;
   width: 100%;
-  animation-name: bannermove-couple;
-  animation-duration: 180s;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
+
+  -webkit-animation: bannermove-prof 10s alternate linear infinite;
+    -moz-animation: bannermove-prof 10s alternate linear infinite;
+      -ms-animation: bannermove-prof 10s alternate linear infinite;
+        -o-animation: bannermove-prof 10s alternate linear infinite;
+          animation: bannermove-prof 10s alternate linear infinite;
 }
 
-.couple-pics img {
+.professional-pics img {
   margin: 0em .625em;
   box-shadow: .125em .125em .5em #8a8a8a;
 }
 
 @keyframes bannermove-prof {
   0% {
+    left: 0
+  }
+
+  100% {
+    left: calc(-1 * 100vw * (var(--slideshow-items) - var(--ignore-width-of-first-item)));
+  }
+}
+
+@-webkit-keyframes bannermove-prof {
+  0% {
     transform: translateX(0);
   }
 
   100% {
-    transform: translateX(-45em);
+    transform: translateX(-45vw);
+  }
+}
+
+@-moz-keyframes bannermove-prof {
+  0% {
+    transform: translateX(0);
   }
 
+  100% {
+    transform: translateX(-45vw);
+  }
 }
 
-.professional-pics {
-  position: relative;
-  height: 15em;
-  margin-bottom: 1.875em;
-  display: flex;
-  width: 100%;
-  animation-name: bannermove-prof;
-  animation-duration: 10s;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
+@-ms-keyframes bannermove-prof {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-45vw);
+  }
 }
 
-.professional-pics img {
-  margin: 0em .625em;
-  box-shadow: .125em .125em .5em #8a8a8a;
+@-o-keyframes bannermove-prof {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-45vw);
+  }
 }
 
 /* Paragraph*/
