@@ -232,6 +232,21 @@ h4 {
   color: #a87164;
 }
 
+.about_link {
+  font-size: 3vh;
+  color: #49432d;
+  margin-left: .7vw;
+  margin-right: .7vw;
+  text-align: justify;
+  padding-top: 0;
+  margin-bottom: .3vh;
+  margin-top: .7vh;
+}
+
+.about_link:hover {
+  color: #a87164;
+}
+
 .loc-container .map-loc {
   flex: 1;
 }
@@ -434,6 +449,11 @@ input[type="submit"] {
 }
 
 /* Footer */
+
+footer {
+  margin: 0;
+  width: 100%;
+}
 
 .bottom {
   display: flex;
