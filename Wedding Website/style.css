@@ -46,6 +46,9 @@ li {
 a {
     color: #f0dfba;
     text-decoration: none;
+    padding-top: .3vh;
+    margin-bottom: .3vh;
+    margin-top: .7vh;
 }
 
 .light-green {
@@ -152,7 +155,7 @@ p {
   margin-left: .7vw;
   margin-right: .7vw;
   text-align: justify;
-  padding-top: 0;
+  padding-top: .3vh;
   margin-bottom: .3vh;
   margin-top: .7vh;
 }
@@ -218,7 +221,9 @@ h4 {
   align-items: center;
   width: 100%
 }
-
+.loc-address {
+  padding-right: .5vw
+}
 .map-loc {
   display: flex;
   font-size: 3vh;
@@ -273,6 +278,28 @@ h4 {
 
 .short-text {
   text-align: start;
+}
+
+.transport {
+  margin-left: 1vw;
+}
+
+.transport h3 {
+  margin-left: 0;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+
+.transport p {
+  margin-left: 0;
+  margin-top: .5vh;
+  margin-bottom: .5vh;
+}
+
+.transport a {
+  margin-left: 0;
+  margin-top: .5vh;
+  margin-bottom: .5vh;
 }
 
 .closing-container {
