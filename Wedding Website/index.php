@@ -1,3 +1,12 @@
+<?php 
+session_start(); 
+// Check if the user is logged in 
+if (!isset($_SESSION['loggedin'])) {
+  header('Location: login.php'); 
+  exit; 
+} 
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,7 +26,6 @@
       <li><a href="us.html">Us</a></li>
     </ul>
   </nav>
-  
   <div class="main">
     <div class="pics-container">
       <div class="couple-pics">
