@@ -1,0 +1,61 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  flex-direction: column;
+  font-family: "Tolkien", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background: #c7af6b;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  border: 1px solid #49432d;
+  border-radius: 10px;
+  background-color: #e4ddc1;
+  box-shadow: 0 0 10px #8a8a8a;
+}
+
+h2 { 
+  text-align: center; 
+  margin-bottom: 20px; 
+  font-size: 7vh;
+  color: #683019
+}
+
+label {
+  margin-bottom: 5px;
+  color: #683019;
+  font-size: 5vh;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #f0dfba;
+  border-radius: 5px;
+  font-family: "Tolkien", sans-serif;
+  font-size: 3vh;
+  color: #713d34
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #7b4938;
+  color: #f0dfba;
+  cursor: pointer;
+  font-family: "Tolkien", sans-serif;
+  font-size: 5vh;
+}
+
+button:hover {
+  background-color: #a87164;
+}
