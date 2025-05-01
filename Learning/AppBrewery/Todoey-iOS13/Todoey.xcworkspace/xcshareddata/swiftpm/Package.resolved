@@ -1,0 +1,33 @@
+{
+  "originHash" : "76da2ccbd1eea3686d534e68d5fd0479eaa1bb82ca9a6a6782c5fcc76d8a5c65",
+  "pins" : [
+    {
+      "identity" : "hue",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/zenangst/Hue.git",
+      "state" : {
+        "revision" : "b9d920cee4ba795fefb828d130744eee1e3d2feb",
+        "version" : "5.0.1"
+      }
+    },
+    {
+      "identity" : "realm-core",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/realm/realm-core.git",
+      "state" : {
+        "revision" : "cccb3ca9e26ec452a29f2f0d4050d1e38b8a3d43",
+        "version" : "14.14.0"
+      }
+    },
+    {
+      "identity" : "realm-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/realm/realm-swift",
+      "state" : {
+        "branch" : "master",
+        "revision" : "712c52af6ae1aaca9aec83f1a14f4e5d48e3a24c"
+      }
+    }
+  ],
+  "version" : 3
+}
