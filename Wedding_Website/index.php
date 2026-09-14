@@ -107,7 +107,7 @@ if (!isset($_SESSION['loggedin'])) {
 	</div>
   <footer>
 		<div class="bottom">
-			<img src="Pics/weddingPartysilhouette.tiff" loading="lazy" alt="Lord of the rings inspired picture of the wedding party walking.">
+			<img src="Pics/weddingPartysilhouette.tiff" loading="eager" alt="Lord of the rings inspired picture of the wedding party walking.">
 		</div>
 	</footer>
 </body>

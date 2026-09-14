@@ -11,7 +11,7 @@
 <body>
 	<nav class="light-green sticky">
     <ul class="main-nav">
-      <li><a href="index.html">Home</a></li>
+      <li><a href="index.php">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="us.html">Us</a></li>
     </ul>
@@ -29,7 +29,7 @@
     </div>
 	  <h2>We need you to answer these Questions</h2>
 	  <form name="weddingResponse" action="responses/answers.php" method="post" id="rsvp-form">
-	  	<label for="fname"><small>*</small> First name(s):</label><br>
+	  	<label for="fname"><small>*</small> First name(s) <small><i>Please write all names on invite (if responses are the same) </i></small>:</label><br>
 	  	<input type="text" id="fname" name="fname" required><br>
 	  	<label for="lname"><small>*</small> Last name(s):</label><br>
 	  	<input type="text" id="lname" name="lname" required><br>
@@ -52,14 +52,13 @@
 	  	<input type="checkbox" id="lac" name="diet" value="Lactose">
 	  	<label>Lactose Intolerance</label><br>
 	  	<label>Allergies: </label> <input type="text" name="diet" style="width:95%"><br>
-			<label><small>If you have responded for multiple people let us know here who the dietary requirements are for:</small></label><br>
 	  	<label for="access">Do you have any accessability requirements that we should be aware of? <small>(e.g. sensory, physical, mobility, or other)</small></label><br>
 	  	<input type="text" id="access" name="access" style="width:95%"><br>
 	  	<label for="song">Do you have a song request?</label><br>
 	  	<input type="text" id="song" name="song" style="width:95%"><br>
 	  	<label for="advice">Do you have any advice for us?</label><br>
 	  	<input type="text" id="advice" name="advice" style="width:95%"><br>
-	  	<label for="other">Finally, anything else you want to tell or ask us us? <br><small>If you have responded for multiple people, and have entered dietary/accessibility requirements, please let us know here who they are for.</small></label><br>
+	  	<label for="other">Finally, anything else you want to tell or ask us us? <br> <small>If you have responded for multiple people, and have entered dietary/accessibility requirements, please let us know here who they are for.</small></label><br>
 	  	<input type="text" id="other" name="other" style="width:95%"><br>
 	  	<input type="submit" name="Finished"><br>
 	  	<label><small>* Required</small></label>
@@ -67,7 +66,7 @@
 	</div>
 	<footer>
 		<div class="bottom">
-			<img src="Pics/weddingPartysilhouette.tiff" loading="lazy" alt="Lord of the rings inspired picture of the wedding party walking.">
+			<img src="Pics/weddingPartysilhouette.tiff" loading="eager" alt="Lord of the rings inspired picture of the wedding party walking.">
 		</div>
 	</footer>
 </body>
